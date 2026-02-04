@@ -47,6 +47,3 @@ def get_result():
         return jsonify({"name": student.name, "marks": student.marks})
     else:
         return jsonify({"error": "Student not found"})
-
-if __name__ == "__main__":
-    app.run(debug=True)
